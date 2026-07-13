@@ -1,0 +1,129 @@
+body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    background-color: var(--surface-primary);
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+h2 {
+    margin-bottom: 72px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--contrast-high);
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--contrast-high);
+}
+
+button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--contrast-high);
+}
+
+.logo-part {
+    color: var(--brand-default);
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.sr-only {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+}
+
+:root {
+    /* Colors */
+    --brand-default: #4d5ae5;
+    --brand-pressed: #404bbf;
+
+    --text-primary: #434455;
+    --text-secondary: #8e8f99;
+    --contrast-high: #2e2f42;
+
+    --surface-primary: #ffffff;
+    --surface-default: #f4f4fd;
+    --surface-hero: #2e2f42;
+    --surface-modal: #fcfcfc;
+
+    --overlay-modal: #2e2f42;
+
+    --accent-subtle: #e7e9fc;
+    --success: #31d0aa;
+
+    /* Fonts */
+    --font-primary: 'Roboto', sans-serif;
+    --font-logo: 'Raleway', sans-serif;
+}

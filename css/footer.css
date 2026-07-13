@@ -1,0 +1,120 @@
+.footer {
+    padding: 100px 0;
+    background-color: var(--contrast-high);
+    color: var(--surface-default);
+}
+
+.footer .container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-info {
+    max-width: 264px;
+    margin-right: 120px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--surface-default);
+}
+
+.socials-title {
+    font-weight: 500;
+    color: var(--surface-primary);
+}
+
+.socials-list {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--brand-default);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--success);
+}
+
+.socials-list-icon {
+    fill: var(--surface-default);
+}
+
+.subscription {
+    margin-left: auto;
+}
+
+.subscription-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: var(--surface-primary);
+}
+
+.subscription-form {
+    display: flex;
+    gap: 24px;
+}
+
+.subscription-input {
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid var(--surface-primary);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--surface-primary);
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-input::placeholder {
+    color: var(--surface-primary);
+}
+
+.subscription-input:focus {
+    border-color: var(--success);
+}
+
+.subscription-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--surface-primary);
+    background-color: var(--brand-default);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-btn:hover,
+.subscription-btn:focus {
+    background-color: var(--success);
+}
+
+.subscription-icon {
+    fill: var(--surface-primary);
+}
