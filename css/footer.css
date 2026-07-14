@@ -1,36 +1,38 @@
 .footer {
-    padding: 100px 0;
+    padding: 96px 0;
     background-color: var(--contrast-high);
     color: var(--surface-default);
 }
 
 .footer .container {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
 }
 
 .footer-info {
-    max-width: 264px;
-    margin-right: 120px;
+    text-align: center;
 }
 
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+    padding: 0;
     color: var(--surface-default);
 }
 
 .socials-title {
     font-weight: 500;
     color: var(--surface-primary);
+    text-align: center;
+    margin-bottom: 16px;
 }
 
 .socials-list {
-    margin-top: 16px;
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-top: 16px;
 }
 
 .socials-link {
@@ -53,23 +55,22 @@
     fill: var(--surface-default);
 }
 
-.subscription {
-    margin-left: auto;
-}
-
 .subscription-title {
     margin-bottom: 16px;
     font-weight: 500;
     color: var(--surface-primary);
+    text-align: center;
 }
 
 .subscription-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 .subscription-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     padding: 8px 16px;
     border: 1px solid var(--surface-primary);
@@ -92,13 +93,15 @@
 }
 
 .subscription-btn {
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    min-width: 165px;
-    height: 40px;
-    padding: 8px 24px;
+
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -117,4 +120,62 @@
 
 .subscription-icon {
     fill: var(--surface-primary);
+}
+
+@media (min-width: 768px) {
+    .footer .container {
+        padding: 0 108px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 72px 24px;
+    }
+
+    .footer-info {
+        text-align: left;
+        max-width: 264px;
+    }
+
+    .socials-title {
+        text-align: left;
+    }
+
+    .subscription-title {
+        text-align: left;
+    }
+
+    .subscription-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .subscription-input {
+        width: 264px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
+
+    .footer .container {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0 15px;
+    }
+
+    .footer-info {
+        max-width: 264px;
+        margin-right: 120px;
+    }
+
+    .socials {
+        margin-right: 83px;
+    }
+
+    .subscription {
+        margin-left: auto;
+    }
 }

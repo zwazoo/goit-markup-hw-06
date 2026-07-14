@@ -4,12 +4,13 @@
 
 .members {
     display: flex;
-    justify-content: space-between;
-    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
 }
 
 .member {
-    flex: 1;
+    width: 264px;
     border-radius: 0 0 4px 4px;
     background-color: var(--surface-primary);
     box-shadow:
@@ -56,4 +57,20 @@
 
 .member-socials-icon {
     fill: var(--surface-default);
+}
+
+@media (min-width: 768px) {
+    .members {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 64px 24px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .members {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
 }

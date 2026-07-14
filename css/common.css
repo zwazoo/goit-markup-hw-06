@@ -82,13 +82,32 @@ img {
 }
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    min-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .container {
+        width: 1158px;
+        padding: 0 15px;
+    }
+}
+
 .section {
-    padding: 120px 0;
+    padding: 96px 0;
+}
+
+@media (min-width: 1158px) {
+    .section {
+        padding: 120px 0;
+    }
 }
 
 .sr-only {

@@ -1,22 +1,77 @@
 .hero {
-    max-width: 1440px;
+    padding: 72px 0;
     margin: 0 auto;
-    padding: 188px 0px;
-    background:
-        linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
-        url('../images/hero-bg.jpg') no-repeat center;
+    text-align: center;
+    background-color: var(--surface-hero);
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
+@media (min-resolution: 2x) {
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg-mobile@2x.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 112px 0;
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg-tablet.jpg');
+    }
+}
+
+@media (min-width: 768px) and (min-resolution: 2x) {
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg-tablet@2x.jpg');
+    }
+}
+
+@media (min-width: 1158px) {
+    .hero {
+        max-width: 1440px;
+        padding: 188px 0;
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg-desktop.jpg');
+    }
+}
+
+@media (min-width: 1158px) and (min-resolution: 2x) {
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg-desktop@2x.jpg');
+    }
+}
+
 .hero-title {
-    max-width: 496px;
-    margin: 0 auto 48px;
+    max-width: 216px;
+    margin: 0 auto 72px;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--surface-primary);
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        max-width: 496px;
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+}
+
+@media (min-width: 1158px) {
+    .hero-title {
+        margin-bottom: 48px;
+    }
 }
 
 .hero-btn {
@@ -34,5 +89,4 @@
 .hero-btn:hover,
 .hero-btn:focus {
     background: var(--brand-pressed);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
