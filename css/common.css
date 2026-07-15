@@ -83,19 +83,13 @@ img {
 
 .container {
     min-width: 320px;
+    max-width: 1158px;
     padding: 0 16px;
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
-
 @media (min-width: 1158px) {
     .container {
-        width: 1158px;
         padding: 0 15px;
     }
 }
