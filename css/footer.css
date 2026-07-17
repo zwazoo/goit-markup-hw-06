@@ -15,7 +15,8 @@
 }
 
 .footer-logo {
-    display: inline-block;
+    display: block;
+    text-align: center;
     margin-bottom: 16px;
     padding: 0;
     color: var(--surface-default);
@@ -135,8 +136,16 @@
         max-width: 264px;
     }
 
+    .footer-logo {
+        text-align: left;
+    }
+
     .socials-title {
         text-align: left;
+    }
+
+    .socials-list {
+        justify-content: flex-start;
     }
 
     .subscription-title {

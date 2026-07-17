@@ -82,15 +82,21 @@ img {
 }
 
 .container {
-    min-width: 320px;
-    max-width: 1158px;
+    max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
 }
 
-@media (min-width: 1158px) {
+@media (min-width: 768px) {
     .container {
+        max-width: 768px;
         padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
     }
 }
 
